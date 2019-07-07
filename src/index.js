@@ -1,9 +1,9 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from 'react-dom';
-import {Route, Switch} from 'react-router-dom';
-import {ConnectedRouter} from 'connected-react-router';
-import createBrowserHistory from 'history/createBrowserHistory';
+import { Route, Switch } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
+import { createBrowserHistory } from 'history';
 import createStore from './store';
 import TodoApp from './containers/TodoApp';
 import ErrorPage from './components/ErrorPage';

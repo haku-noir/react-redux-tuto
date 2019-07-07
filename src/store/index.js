@@ -1,6 +1,7 @@
 import { createStore as reduxCreateStore, combineReducers, compose, applyMiddleware } from 'redux';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 import tasksReducer from '../reducers/tasks';
 
 export default function createStore(history){
@@ -23,18 +24,6 @@ export default function createStore(history){
     )
   );
 }
-
-const logger = store => next => action => {
-  console.log(store.getState());
-  console.log(action);
-
-  const result = next(action);
-
-  console.log(store.getState());
-  console.log("--------------");
-
-  return result;
-};
 
 const storager = store => next => action => {
   const result = next(action);

@@ -1,0 +1,19 @@
+.ListItem-enter {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.ListItem-enter.ListItem-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 300ms ease-in;
+}
+
+.ListIleave {
+  opacity: 0;
+}
+
+.ListItem-leave.ListItem-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
