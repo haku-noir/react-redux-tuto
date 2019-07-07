@@ -15,6 +15,16 @@ export default function tasksReducer(state = initialState, action){
         ...state,
         task: action.payload.task
       };
+    case 'RESET_TASK':
+      return {
+        ...state,
+        ...initialState
+      };
+    case 'UPDATE_INPUT':
+      return {
+        ...state,
+        task: action.payload.task
+      }
     default:
       return state;
   }
