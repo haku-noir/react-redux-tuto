@@ -1,6 +1,6 @@
 {
   "name": "react-redux-tuto",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ReactとReduxを勉強するために作成したTodoアプリ",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,12 @@
   "homepage": "https://github.com/haku-noir/react-redux-tuto#readme",
   "private": true,
   "dependencies": {
+    "connected-react-router": "^6.5.0",
+    "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1"
   },
