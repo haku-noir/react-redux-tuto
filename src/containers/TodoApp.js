@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
-import { push } from 'connected-react-router';
 import TodoApp from '../components/TodoApp';
-import { addTask, inputTask } from '../actions/tasks';
+import { addTaskAndClear, inputTask, resetTask, asyncRedirectToError } from '../actions/tasks';
 
 function mapStateToProps({tasks}){
   return {
@@ -13,13 +12,16 @@ function mapStateToProps({tasks}){
 function mapDispatchToProps(dispatch){
   return {
     addTask(task){
-      dispatch(addTask(task));
+      dispatch(addTaskAndClear(task));
     },
     inputTask(task){
       dispatch(inputTask(task));
     },
+    resetTask(){
+      dispatch(resetTask());
+    },
     redirectToError(){
-      dispatch(push("/error"));
+      dispatch(asyncRedirectToError());
     }
   };
 }
