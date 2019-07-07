@@ -1,0 +1,20 @@
+{
+  "name": "react-redux-tuto",
+  "version": "1.0.0",
+  "description": "ReactとReduxを勉強するために作成したTodoアプリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haku-noir/react-redux-tuto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haku-noir/react-redux-tuto/issues"
+  },
+  "homepage": "https://github.com/haku-noir/react-redux-tuto#readme"
+}
